@@ -1,4 +1,7 @@
 # testing-everything
+
+[![Build Status](https://travis-ci.org/kenduigraha/Continous-Integration.svg?branch=master)](https://travis-ci.org/kenduigraha/Continous-Integration)
+
 Practice TTD - Test Driven Development using Mocha.js & Chai.js with work flow : Test (red) - Code (green) - Refactor (blue)
 
 ## TDD Workflow
