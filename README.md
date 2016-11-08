@@ -1,92 +1,62 @@
-# Blog with Express and TDD - Continous Integration
-Implement testing  Restful API with Mocha.js and Chai.js in TDD - Test Driven Development, Continous integration with travis
+# testing-everything
+Practice TTD - Test Driven Development using Mocha.js & Chai.js with work flow : Test (red) - Code (green) - Refactor (blue)
 
-## How To Use
-1. npm install
-2. mocha test/api.articles.test.js (for test articles)
-3. mocha test/api.users.test.js (for test users)
+## TDD Workflow
+1.  RED
+    * Make the test first (failing test)
+2. GREEN
+    * Implement the code and make the test success (test passed)
+3. BLUE
+    * Refactor the code (make it right)
 
-## Dependency
-1. mocha.js : `npm i -D mocha`
-2. chai.js : `npm i -S mocha`
-3. express : `npm i -g express`
-4. mongodb : `npm i -S mongodb`
-5. mongoose : `npm i -S mongoose`
-6. passport : `npm i -S passport`
-7. passport-local : `npm i -S passport-local`
-8. passport-local-mongoose : `npm i -S passport-local-mongoose`
-9. chai-http : `npm i -S chai-http`
+## Dependencies
+1. mocha : ```npm i -D mocha```
+2. chai : ```npm i -S chai```
 
-## Databases Configuration
-1. Database's name : db_blog
-2. Database's collections :
-    * Users
-      * username (string)
-      * password (string)
-    * Articles
-      * content (string)
+## How To use
+1. ```npm install```
+2. ```mocha```
+3. live watch : ```mocha -w```
 
-## End Point RESTful API Routes
-Default development host & port : http://localhost:3000
-
-| Routes | HTTP | Description |
-|--------|------|-------------|
-| api/users | GET | get respond JSON of all users's data  |
-| api/users | POST | process & get respond JSON the new user's data |
-| api/users/:id | PUT | process & get respond JSON the edited user's data |
-| api/users/:id | DELETE | process & get respond JSON the deleted user's data |
-| api/articles | GET | get respond JSON of all articles's data  |
-| api/articles | POST | process & get respond JSON the new blog's data |
-| api/articles/:id | PUT | process & get respond JSON the edited blog's data |
-| api/articles/:id | DELETE | process & get respond JSON the deleted blog's data |
-
-## File Structure
+## Tree
 ```
 .
 ├── README.md
-└── server
-    ├── app.js
-    ├── bin
-    ├── controllers
-    ├── models
-    ├── package.json
-    ├── public
-    ├── routes
-    ├── test
-    └── views
+├── controller
+│   └── controller.index.js
+├── package.json
+└── test
+    └── index.test.js
 
-8 directories, 3 files
+2 directories, 4 files
 ```
 
-## Package JSON
+## Package json
 ```
 {
-  "name": "server",
-  "version": "0.0.0",
-  "private": true,
+  "name": "testing-everything",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blanford-fox-2016/testing-everything.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blanford-fox-2016/testing-everything/issues"
+  },
+  "homepage": "https://github.com/blanford-fox-2016/testing-everything#readme",
+  "devDependencies": {
+    "mocha": "^3.1.2"
   },
   "dependencies": {
-    "body-parser": "~1.15.1",
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "express": "~4.13.4",
-    "express-session": "^1.14.2",
-    "jade": "~1.11.0",
-    "mongodb": "^2.2.11",
-    "mongoose": "^4.6.6",
-    "morgan": "~1.7.0",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^4.0.0",
-    "serve-favicon": "~2.3.0"
-  },
-  "devDependencies": {
-    "mocha": "^3.1.2",
-    "nodemon": "^1.11.0"
+    "chai": "^3.5.0"
   }
 }
 
