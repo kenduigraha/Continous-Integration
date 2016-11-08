@@ -1,5 +1,5 @@
 # Blog with Express and TDD - Continous Integration
-Implement testing  Restful API with Mocha.js and Chai.js in TDD - Test Driven Development
+Implement testing  Restful API with Mocha.js and Chai.js in TDD - Test Driven Development, Continous integration with travis
 
 ## How To Use
 1. npm install
@@ -7,15 +7,15 @@ Implement testing  Restful API with Mocha.js and Chai.js in TDD - Test Driven De
 3. mocha test/api.users.test.js (for test users)
 
 ## Dependency
-1. mocha.js : ```npm i -D mocha```
-2. chai.js : ```npm i -S mocha```
-3. express : ```npm i -g express```
-4. mongodb : ```npm i -S mongodb```
-5. mongoose : ```npm i -S mongoose```
-6. passport : ```npm i -S passport```
-7. passport-local : ```npm i -S passport-local```
-8. passport-local-mongoose : ```npm i -S passport-local-mongoose```
-9. chai-http : ```npm i -S chai-http```
+1. mocha.js : `npm i -D mocha`
+2. chai.js : `npm i -S mocha`
+3. express : `npm i -g express`
+4. mongodb : `npm i -S mongodb`
+5. mongoose : `npm i -S mongoose`
+6. passport : `npm i -S passport`
+7. passport-local : `npm i -S passport-local`
+8. passport-local-mongoose : `npm i -S passport-local-mongoose`
+9. chai-http : `npm i -S chai-http`
 
 ## Databases Configuration
 1. Database's name : db_blog
